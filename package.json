@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.32.0",
+  "packageManager": "pnpm@7.32.1",
   "description": "",
   "author": "ocavue <ocavue@gmail.com>",
   "license": "MIT",
@@ -38,7 +38,7 @@
     "prosemirror-schema-list": "^1.2.2",
     "prosemirror-state": "^1.4.2",
     "prosemirror-view": "^1.30.2",
-    "typescript": "^5.0.2",
+    "typescript": "^5.0.4",
     "vite": "^4.2.1"
   },
   "renovate": {
