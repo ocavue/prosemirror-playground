@@ -37,7 +37,7 @@
     "prosemirror-schema-basic": "^1.2.1",
     "prosemirror-schema-list": "^1.2.2",
     "prosemirror-state": "^1.4.2",
-    "prosemirror-view": "^1.30.2",
+    "prosemirror-view": "^1.31.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.1"
   },
