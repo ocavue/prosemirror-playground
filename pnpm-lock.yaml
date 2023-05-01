@@ -8,8 +8,8 @@ devDependencies:
     specifier: ^0.4.7
     version: 0.4.7(eslint@8.39.0)(prettier@2.8.8)(typescript@5.0.4)
   '@types/node':
-    specifier: ^18.16.0
-    version: 18.16.0
+    specifier: ^18.16.3
+    version: 18.16.3
   eslint:
     specifier: ^8.39.0
     version: 8.39.0
@@ -41,8 +41,8 @@ devDependencies:
     specifier: ^5.0.4
     version: 5.0.4
   vite:
-    specifier: ^4.3.1
-    version: 4.3.1(@types/node@18.16.0)
+    specifier: ^4.3.3
+    version: 4.3.3(@types/node@18.16.3)
 
 packages:
 
@@ -452,8 +452,8 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node@18.16.0:
-    resolution: {integrity: sha512-BsAaKhB+7X+H4GnSjGhJG9Qi8Tw+inU9nJDwmD5CgOmBLEI6ArdhikpLX7DjbjDRDTbqZzU2LSQNZg8WGPiSZQ==}
+  /@types/node@18.16.3:
+    resolution: {integrity: sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -2073,8 +2073,8 @@ packages:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
     dev: true
 
-  /nanoid@3.3.4:
-    resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
+  /nanoid@3.3.6:
+    resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
     dev: true
@@ -2278,11 +2278,11 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss@8.4.21:
-    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
+  /postcss@8.4.23:
+    resolution: {integrity: sha512-bQ3qMcpF6A/YjR55xtoTr0jGOlnPOKAIMdOWiv0EIT6HVPEaJiJB4NLljSbiHoC2RX7DN5Uvjtpbg1NPdwv1oA==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
-      nanoid: 3.3.4
+      nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
     dev: true
@@ -2787,8 +2787,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.3.1(@types/node@18.16.0):
-    resolution: {integrity: sha512-EPmfPLAI79Z/RofuMvkIS0Yr091T2ReUoXQqc5ppBX/sjFRhHKiPPF/R46cTdoci/XgeQpB23diiJxq5w30vdg==}
+  /vite@4.3.3(@types/node@18.16.3):
+    resolution: {integrity: sha512-MwFlLBO4udZXd+VBcezo3u8mC77YQk+ik+fbc0GZWGgzfbPP+8Kf0fldhARqvSYmtIWoAJ5BXPClUbMTlqFxrA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2812,9 +2812,9 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.16.0
+      '@types/node': 18.16.3
       esbuild: 0.17.12
-      postcss: 8.4.21
+      postcss: 8.4.23
       rollup: 3.21.0
     optionalDependencies:
       fsevents: 2.3.2
