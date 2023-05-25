@@ -28,18 +28,18 @@
   "devDependencies": {
     "@antfu/ni": "^0.21.3",
     "@ocavue/eslint-config": "^0.4.7",
-    "@types/node": "^18.16.9",
-    "eslint": "^8.40.0",
+    "@types/node": "^18.16.15",
+    "eslint": "^8.41.0",
     "esno": "^0.16.3",
     "prettier": "^2.8.8",
-    "prosemirror-example-setup": "^1.2.1",
-    "prosemirror-model": "^1.19.0",
-    "prosemirror-schema-basic": "^1.2.1",
-    "prosemirror-schema-list": "^1.2.2",
-    "prosemirror-state": "^1.4.2",
-    "prosemirror-view": "^1.31.2",
+    "prosemirror-example-setup": "^1.2.2",
+    "prosemirror-model": "^1.19.2",
+    "prosemirror-schema-basic": "^1.2.2",
+    "prosemirror-schema-list": "^1.2.3",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-view": "^1.31.3",
     "typescript": "^5.0.4",
-    "vite": "^4.3.5"
+    "vite": "^4.3.8"
   },
   "renovate": {
     "extends": [
