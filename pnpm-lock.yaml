@@ -6,14 +6,14 @@ settings:
 
 devDependencies:
   '@antfu/ni':
-    specifier: ^0.21.4
-    version: 0.21.4
+    specifier: ^0.21.5
+    version: 0.21.5
   '@ocavue/eslint-config':
     specifier: ^0.4.7
     version: 0.4.7(eslint@8.45.0)(prettier@2.8.8)(typescript@5.1.6)
   '@types/node':
-    specifier: ^18.16.19
-    version: 18.16.19
+    specifier: ^18.17.0
+    version: 18.17.0
   eslint:
     specifier: ^8.45.0
     version: 8.45.0
@@ -45,8 +45,8 @@ devDependencies:
     specifier: ^5.1.6
     version: 5.1.6
   vite:
-    specifier: ^4.4.4
-    version: 4.4.4(@types/node@18.16.19)
+    specifier: ^4.4.6
+    version: 4.4.6(@types/node@18.17.0)
 
 packages:
 
@@ -55,8 +55,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@antfu/ni@0.21.4:
-    resolution: {integrity: sha512-O0Uv9LbLDSoEg26fnMDdDRiPwFJnQSoD4WnrflDwKCJm8Cx/0mV4cGxwBLXan5mGIrpK4Dd7vizf4rQm0QCEAA==}
+  /@antfu/ni@0.21.5:
+    resolution: {integrity: sha512-rFmuqZMFa1OTRbxdu3vmfytsy1CtsIUFH0bO85rZ1xdu2uLoioSaEi6iOULDVTQUrnes50jMs+UW355Ndj7Oxg==}
     hasBin: true
     dev: true
 
@@ -659,8 +659,8 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node@18.16.19:
-    resolution: {integrity: sha512-IXl7o+R9iti9eBW4Wg2hx1xQDig183jj7YLn8F7udNceyfkbn1ZxmzZXuak20gR40D7pIkIY1kYGx5VIGbaHKA==}
+  /@types/node@18.17.0:
+    resolution: {integrity: sha512-GXZxEtOxYGFchyUzxvKI14iff9KZ2DI+A6a37o6EQevtg6uO9t+aUZKcaC1Te5Ng1OnLM7K9NVVj+FbecD9cJg==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -2306,8 +2306,8 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /postcss@8.4.25:
-    resolution: {integrity: sha512-7taJ/8t2av0Z+sQEvNzCkpDynl0tX3uJMCODi6nT3PfASC7dYCWV9aQ+uiCf+KBD4SEFcu+GvJdGdwzQ6OSjCw==}
+  /postcss@8.4.27:
+    resolution: {integrity: sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==}
     engines: {node: ^10 || ^12 || >=14}
     dependencies:
       nanoid: 3.3.6
@@ -2819,8 +2819,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.4.4(@types/node@18.16.19):
-    resolution: {integrity: sha512-4mvsTxjkveWrKDJI70QmelfVqTm+ihFAb6+xf4sjEU2TmUCTlVX87tmg/QooPEMQb/lM9qGHT99ebqPziEd3wg==}
+  /vite@4.4.6(@types/node@18.17.0):
+    resolution: {integrity: sha512-EY6Mm8vJ++S3D4tNAckaZfw3JwG3wa794Vt70M6cNJ6NxT87yhq7EC8Rcap3ahyHdo8AhCmV9PTk+vG1HiYn1A==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2847,9 +2847,9 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.16.19
+      '@types/node': 18.17.0
       esbuild: 0.18.11
-      postcss: 8.4.25
+      postcss: 8.4.27
       rollup: 3.26.2
     optionalDependencies:
       fsevents: 2.3.2
