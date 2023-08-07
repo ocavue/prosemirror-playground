@@ -12,8 +12,8 @@ devDependencies:
     specifier: ^0.4.7
     version: 0.4.7(eslint@8.46.0)(prettier@2.8.8)(typescript@5.1.6)
   '@types/node':
-    specifier: ^18.17.1
-    version: 18.17.1
+    specifier: ^18.17.3
+    version: 18.17.3
   eslint:
     specifier: ^8.46.0
     version: 8.46.0
@@ -45,8 +45,8 @@ devDependencies:
     specifier: ^5.1.6
     version: 5.1.6
   vite:
-    specifier: ^4.4.7
-    version: 4.4.7(@types/node@18.17.1)
+    specifier: ^4.4.8
+    version: 4.4.8(@types/node@18.17.3)
 
 packages:
 
@@ -659,8 +659,8 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /@types/node@18.17.1:
-    resolution: {integrity: sha512-xlR1jahfizdplZYRU59JlUx9uzF1ARa8jbhM11ccpCJya8kvos5jwdm2ZAgxSCwOl0fq21svP18EVwPBXMQudw==}
+  /@types/node@18.17.3:
+    resolution: {integrity: sha512-2x8HWtFk0S99zqVQABU9wTpr8wPoaDHZUcAkoTKH+nL7kPv3WUI9cRi/Kk5Mz4xdqXSqTkKP7IWNoQQYCnDsTA==}
     dev: true
 
   /@types/normalize-package-data@2.4.1:
@@ -2819,8 +2819,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite@4.4.7(@types/node@18.17.1):
-    resolution: {integrity: sha512-6pYf9QJ1mHylfVh39HpuSfMPojPSKVxZvnclX1K1FyZ1PXDOcLBibdq5t1qxJSnL63ca8Wf4zts6mD8u8oc9Fw==}
+  /vite@4.4.8(@types/node@18.17.3):
+    resolution: {integrity: sha512-LONawOUUjxQridNWGQlNizfKH89qPigK36XhMI7COMGztz8KNY0JHim7/xDd71CZwGT4HtSRgI7Hy+RlhG0Gvg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -2847,7 +2847,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.17.1
+      '@types/node': 18.17.3
       esbuild: 0.18.11
       postcss: 8.4.27
       rollup: 3.26.2
