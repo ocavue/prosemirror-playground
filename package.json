@@ -30,7 +30,7 @@
     "@antfu/ni": "^0.21.12",
     "@ocavue/eslint-config": "^1.5.0",
     "@types/node": "^20.12.12",
-    "eslint": "^8.57.0",
+    "eslint": "^9.3.0",
     "esno": "^4.7.0",
     "prettier": "^3.2.5",
     "prosemirror-example-setup": "^1.2.2",
