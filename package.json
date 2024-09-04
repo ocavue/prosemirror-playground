@@ -28,9 +28,9 @@
   },
   "devDependencies": {
     "@antfu/ni": "^0.23.0",
-    "@ocavue/eslint-config": "^1.11.2",
+    "@ocavue/eslint-config": "^2.0.0",
     "@types/node": "^20.16.4",
-    "eslint": "^8.57.0",
+    "eslint": "^9.0.0",
     "esno": "^4.7.0",
     "prettier": "^3.3.3",
     "prosemirror-example-setup": "^1.2.3",

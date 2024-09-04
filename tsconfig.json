@@ -5,10 +5,12 @@
     "lib": ["esnext", "dom"],
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "allowJs": true,
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true
-  }
+  },
+  "include": ["src", "./*.ts", "./*.js"]
 }
