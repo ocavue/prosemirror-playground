@@ -1,12 +1,14 @@
 import './style.css'
+import 'prosemirror-view/style/prosemirror.css'
+import 'prosemirror-tables/style/tables.css'
 
 import { buildMenuItems, exampleSetup } from 'prosemirror-example-setup'
 import { keymap } from 'prosemirror-keymap'
 import { Dropdown, type MenuElement, MenuItem } from 'prosemirror-menu'
 import { DOMParser, Schema } from 'prosemirror-model'
-import { schema as basicSchema, schema } from 'prosemirror-schema-basic'
+import { schema as basicSchema } from 'prosemirror-schema-basic'
 import { addListNodes } from 'prosemirror-schema-list'
-import { EditorState, type Plugin } from 'prosemirror-state'
+import { type Command, EditorState, type Plugin } from 'prosemirror-state'
 import {
   addColumnAfter,
   addColumnBefore,
@@ -63,12 +65,39 @@ function createSchema() {
   })
 }
 
-function createTableMenu(schema: Schema): MenuElement {
+function createTableRow(schema: Schema, cols: number) {
+  const { table_row, table_cell } = schema.nodes
+  const content = []
+  for (let i = 0; i < cols; i++) {
+    content.push(table_cell.createAndFill()!)
+  }
+  return table_row.createChecked(null, content )
+}
+
+function createTable(schema: Schema, rows: number, cols: number) {
+  const { table } = schema.nodes
+  const content = []
+  for (let i = 0; i < rows; i++) {
+    content.push(createTableRow(schema, cols))
+  }
+  return table.createChecked(null, content)
+}
+
+const insertTable: Command = (state, dispatch) => {
+  const schema = state.schema
+  const table = createTable(schema, 3, 3)
+  const tr = state.tr.replaceSelectionWith(table)
+  dispatch?.(tr)
+  return true
+}
+
+function createTableMenu(): MenuElement {
   function item(label: string, cmd: (state: EditorState) => boolean) {
     return new MenuItem({ label, select: cmd, run: cmd })
   }
 
   const tableMenu = [
+    item('Insert table', insertTable),
     item('Insert column before', addColumnBefore),
     item('Insert column after', addColumnAfter),
     item('Delete column', deleteColumn),
@@ -91,7 +120,7 @@ function createTableMenu(schema: Schema): MenuElement {
 function createMenuContent(schema: Schema): MenuElement[][] {
   const { fullMenu } = buildMenuItems(schema)
 
-  fullMenu.splice(2, 0, [createTableMenu(schema)])
+  fullMenu.splice(2, 0, [createTableMenu()])
 
   return fullMenu
 }
