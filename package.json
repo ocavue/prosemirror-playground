@@ -34,10 +34,13 @@
     "esno": "^4.8.0",
     "prettier": "^3.5.3",
     "prosemirror-example-setup": "^1.2.3",
+    "prosemirror-keymap": "^1.2.2",
+    "prosemirror-menu": "^1.2.4",
     "prosemirror-model": "^1.25.0",
     "prosemirror-schema-basic": "^1.2.4",
     "prosemirror-schema-list": "^1.5.1",
     "prosemirror-state": "^1.4.3",
+    "prosemirror-tables": "^1.6.4",
     "prosemirror-view": "^1.39.1",
     "typescript": "^5.8.2",
     "vite": "^5.4.17"
