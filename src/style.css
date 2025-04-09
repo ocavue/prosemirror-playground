@@ -2,3 +2,8 @@
   min-height: 10px !important;
   max-height: 80px !important;
 }
+
+.ProseMirror td,
+.ProseMirror th {
+  border: 1px solid currentColor;
+}
