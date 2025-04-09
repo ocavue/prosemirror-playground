@@ -71,7 +71,7 @@ function createTableRow(schema: Schema, cols: number) {
   for (let i = 0; i < cols; i++) {
     content.push(table_cell.createAndFill()!)
   }
-  return table_row.createChecked(null, content )
+  return table_row.createChecked(null, content)
 }
 
 function createTable(schema: Schema, rows: number, cols: number) {
