@@ -65,6 +65,14 @@ function createSchema() {
   // The doc node MUST contain and only contain a table.
   docSpec.content = 'table'
 
+  const tableSpec = nodes.get('table')!
+  // The table node MUST contain two or more table_row nodes.
+  tableSpec.content = 'table_row table_row+'
+
+  const tableRowSpec = nodes.get('table_row')!
+  // The table_row node MUST contain two or more table_cell nodes.
+  tableRowSpec.content = 'table_cell table_cell+'
+
   return new Schema({
     nodes,
     marks,
