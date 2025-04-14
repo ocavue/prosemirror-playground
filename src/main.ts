@@ -61,6 +61,10 @@ function createSchema() {
     }),
   )
 
+  const docSpec = nodes.get('doc')!
+  // The doc node MUST contain a heading and a table.
+  docSpec.content = 'heading table'
+
   return new Schema({
     nodes,
     marks,
@@ -131,7 +135,7 @@ function createPlugins(schema: Schema) {
   const menuContent = createMenuContent(schema)
   return [
     columnResizing({ View: CustomTableView }),
-    tableEditing(),
+    tableEditing({ allowTableNodeSelection: true }),
     keymap({
       Tab: goToNextCell(1),
       'Shift-Tab': goToNextCell(-1),
@@ -148,6 +152,10 @@ function createView(schema: Schema, plugins: Plugin[]) {
       ),
       plugins,
     }),
+    handleTripleClick() {
+      // Prevent the default behavior of triple-clicking which creates a node selection
+      return true
+    },
   })
 }
 
