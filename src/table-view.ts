@@ -25,6 +25,8 @@ export class CustomTableView extends TableView {
     div.innerText = 'Some text that should not be editable'
     tableContainer.appendChild(div)
     div.contentEditable = 'false'
+
+    // README: use userSelect to prevent the text div from being selected 
     div.style.userSelect = 'none'
 
     // pass everything to the table view dom node
