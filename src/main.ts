@@ -30,6 +30,8 @@ import {
 } from 'prosemirror-tables'
 import { EditorView } from 'prosemirror-view'
 
+import { CustomTableView } from './table-view'
+
 function createSchema() {
   const marks = basicSchema.spec.marks
   let nodes = basicSchema.spec.nodes
@@ -128,7 +130,7 @@ function createMenuContent(schema: Schema): MenuElement[][] {
 function createPlugins(schema: Schema) {
   const menuContent = createMenuContent(schema)
   return [
-    columnResizing(),
+    columnResizing({ View: CustomTableView }),
     tableEditing(),
     keymap({
       Tab: goToNextCell(1),

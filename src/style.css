@@ -3,7 +3,134 @@
   max-height: 80px !important;
 }
 
+.ProseMirror table,
 .ProseMirror td,
 .ProseMirror th {
   border: 1px solid currentColor;
+}
+
+/* Table-specific styling */
+table {
+  margin: 0px;
+  width: 100%;
+  border-spacing: 0px;
+  border-collapse: separate;
+  table-layout: fixed;
+  text-align: left;
+}
+
+.tableContainer {
+  display: grid;
+  border: 1px dashed black;
+  border-radius: 6px;
+  padding: 16px;
+  gap: 8px;
+}
+
+.tableOuterWrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.tableAddButton-row {
+  height: 24px;
+  width: calc(100% - 32px);
+}
+
+.tableAddButton-column {
+  height: 100%;
+  width: 24px;
+}
+
+/* Every cell */
+th,
+td {
+  position: relative;
+  padding-block: 12px;
+  padding-inline: 8px;
+  border-left: 1px solid var(--grey6);
+}
+/* Last cell of every row */
+th:last-child,
+td:last-child {
+  border-right: 1px solid var(--grey6);
+}
+/* Every cell not in the first row */
+tbody tr:not(:first-child) th,
+tbody tr:not(:first-child) td,
+/* Every middle cell of the first row */
+tbody tr:first-child td:not(:first-child):not(:last-child),
+tbody tr:first-child th:not(:first-child):not(:last-child) {
+  border-top: 1px solid var(--grey6);
+}
+/* Every middle cell of the last row */
+tbody tr:last-child td:not(:first-child):not(:last-child),
+tbody tr:last-child th:not(:first-child):not(:last-child) {
+  border-bottom: 1px solid var(--grey6);
+}
+/* Top left cell */
+tbody:first-of-type tr:first-child td:first-child,
+tbody:first-of-type tr:first-child th:first-child {
+  border-top: 1px solid var(--grey6);
+  border-top-left-radius: 6px;
+}
+/* Top right cell */
+tbody:first-of-type tr:first-child td:last-child,
+tbody:first-of-type tr:first-child th:last-child {
+  border-top: 1px solid var(--grey6);
+  border-top-right-radius: 6px;
+}
+/* Bottom left cell */
+tbody:last-of-type tr:last-child td:first-child,
+tbody:last-of-type tr:last-child th:first-child {
+  border-bottom: 1px solid var(--grey6);
+  border-bottom-left-radius: 6px;
+}
+/* Bottom right cell */
+tbody:last-of-type tr:last-child td:last-child,
+tbody:last-of-type tr:last-child th:last-child {
+  border-bottom: 1px solid var(--grey6);
+  border-bottom-right-radius: 6px;
+}
+
+.ProseMirror table td,
+.ProseMirror table th {
+  box-sizing: border-box;
+  min-width: 1em;
+  padding: 6px 8px;
+  position: relative;
+  vertical-align: top;
+}
+
+.ProseMirror table td > *,
+.ProseMirror table th > * {
+  margin-bottom: 0;
+}
+
+.ProseMirror table th {
+  background-color: rgb(235, 235, 235, 0.5);
+  font-weight: bold;
+  text-align: left;
+}
+
+.selectedCell,
+.focusedCell {
+  background-color: rgb(235, 235, 235, 0.4);
+}
+
+table .column-resize-handle {
+  background-color: orangered;
+  bottom: -2px;
+  pointer-events: none;
+  position: absolute;
+  right: -2px;
+  top: 0;
+  width: 4px;
+  z-index: 1;
+}
+
+.resize-cursor {
+  cursor: col-resize;
 }
