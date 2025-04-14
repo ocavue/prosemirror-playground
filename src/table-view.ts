@@ -25,6 +25,7 @@ export class CustomTableView extends TableView {
     div.innerText = 'Some text that should not be editable'
     tableContainer.appendChild(div)
     div.contentEditable = 'false'
+    div.style.userSelect = 'none'
 
     // pass everything to the table view dom node
     this.dom = tableContainer
@@ -38,6 +39,7 @@ function createAddButton(type: 'row' | 'column') {
   button.className = `tableAddButton-${type}`
   button.innerText = '+'
   button.contentEditable = 'false'
+  button.style.userSelect = 'none'
   button.addEventListener('click', () => {
     const view = window.view
     if (!view) {
