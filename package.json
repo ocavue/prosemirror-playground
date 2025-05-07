@@ -30,11 +30,11 @@
     "@antfu/ni": "^0.23.2",
     "@ocavue/eslint-config": "^2.15.1",
     "@types/node": "^20.17.5",
-    "eslint": "^9.23.0",
+    "eslint": "^9.24.0",
     "esno": "^4.8.0",
     "prettier": "^3.5.3",
     "prosemirror-example-setup": "^1.2.3",
-    "prosemirror-keymap": "^1.2.2",
+    "prosemirror-keymap": "^1.2.3",
     "prosemirror-menu": "^1.2.5",
     "prosemirror-model": "^1.25.1",
     "prosemirror-schema-basic": "^1.2.4",
@@ -42,8 +42,8 @@
     "prosemirror-state": "^1.4.3",
     "prosemirror-tables": "^1.7.1",
     "prosemirror-view": "^1.39.2",
-    "typescript": "^5.8.2",
-    "vite": "^6.2.5"
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
   },
   "renovate": {
     "extends": [
