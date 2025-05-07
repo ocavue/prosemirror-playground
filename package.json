@@ -43,7 +43,7 @@
     "prosemirror-tables": "^1.7.1",
     "prosemirror-view": "^1.39.2",
     "typescript": "^5.8.2",
-    "vite": "^5.4.19"
+    "vite": "^6.2.5"
   },
   "renovate": {
     "extends": [
