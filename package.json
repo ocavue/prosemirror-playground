@@ -27,7 +27,7 @@
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.23.2",
+    "@antfu/ni": "^24.3.0",
     "@ocavue/eslint-config": "^2.15.1",
     "@types/node": "^20.17.5",
     "eslint": "^9.24.0",
