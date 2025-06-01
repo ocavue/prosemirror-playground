@@ -52,7 +52,8 @@ function createSchema() {
           setDOMAttr(value, attrs) {
             if (value)
               attrs.style =
-                `background-color: ${value};` + String(attrs.style || '')
+                `background-color: ${value as string};` +
+                String((attrs.style as string) || '')
           },
         },
       },
