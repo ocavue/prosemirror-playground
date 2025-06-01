@@ -9,7 +9,7 @@ importers:
   .:
     devDependencies:
       '@antfu/ni':
-        specifier: ^24.3.0
+        specifier: ^24.4.0
         version: 24.4.0
       '@ocavue/eslint-config':
         specifier: ^3.1.0
@@ -51,7 +51,7 @@ importers:
         specifier: ^1.7.1
         version: 1.7.1
       prosemirror-view:
-        specifier: ^1.39.2
+        specifier: ^1.39.3
         version: 1.39.3
       typescript:
         specifier: ^5.8.3
