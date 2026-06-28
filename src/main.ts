@@ -53,7 +53,7 @@ function createSchema() {
             if (value)
               attrs.style =
                 `background-color: ${value as string};` +
-                String((attrs.style as string) || '')
+                ((attrs.style as string) || '')
           },
         },
       },
