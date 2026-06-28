@@ -26,21 +26,21 @@
   "dependencies": {
     "prosemirror-example-setup": "^1.2.3",
     "prosemirror-keymap": "^1.2.3",
-    "prosemirror-menu": "^1.3.0",
-    "prosemirror-model": "^1.25.4",
+    "prosemirror-menu": "^1.3.2",
+    "prosemirror-model": "^1.25.9",
     "prosemirror-schema-basic": "^1.2.4",
     "prosemirror-schema-list": "^1.5.1",
     "prosemirror-state": "^1.4.4",
     "prosemirror-tables": "^1.8.5",
-    "prosemirror-view": "^1.41.8"
+    "prosemirror-view": "^1.41.9"
   },
   "devDependencies": {
-    "@ocavue/eslint-config": "^4.0.0",
+    "@ocavue/eslint-config": "^4.10.0",
     "@ocavue/tsconfig": "^0.7.1",
     "@types/node": "^24.0.0",
-    "eslint": "^10.0.0",
+    "eslint": "^10.6.0",
     "prettier": "^3.8.2",
-    "typescript": "^6.0.0",
-    "vite": "^8.0.0"
+    "typescript": "^6.0.3",
+    "vite": "^8.1.0"
   }
 }
